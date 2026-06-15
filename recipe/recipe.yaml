@@ -14,7 +14,7 @@ source:
   sha256: ecb163c0c3dc7c72d65a5bc866b927688cbc714afccdac7916b1806c42b80834
 
 build:
-  number: 0
+  number: 1
   script:
     env:
       # Use cmake to build aws-lc-sys, because conda's CFLAGS inject -O2 which
@@ -64,7 +64,7 @@ requirements:
   - if: unix
     then: openssl
   run:
-  - pixi-build-api-version >=4,<5
+  - pixi-build-api-version >=5,<6
 
 tests:
 - script:
