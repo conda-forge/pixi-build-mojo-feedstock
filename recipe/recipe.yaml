@@ -2,7 +2,7 @@
 context:
   name: pixi-build-mojo
   crate_name: pixi_build_mojo
-  version: "0.2.5"
+  version: "0.2.6"
 
 package:
   name: ${{ name }}
@@ -11,7 +11,7 @@ package:
 source:
   url: https://github.com/prefix-dev/pixi/archive/refs/tags/${{ name }}-v${{ 
     version }}.tar.gz
-  sha256: fe30588b9988f3cfc5dd00cfb6560f7ab78991fdfcc97acbab5c71f60b374f74
+  sha256: 275f49241f2d9902d4c090ed9685bdd06cfbcf64d4d4a1c67a783a2b4b148452
 
 build:
   number: 0
@@ -64,7 +64,7 @@ requirements:
   - if: unix
     then: openssl
   run:
-  - pixi-build-api-version >=6,<7
+  - pixi-build-api-version >=7,<8
 
 tests:
 - script:
