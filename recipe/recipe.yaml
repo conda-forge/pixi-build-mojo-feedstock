@@ -2,7 +2,7 @@
 context:
   name: pixi-build-mojo
   crate_name: pixi_build_mojo
-  version: "0.2.8"
+  version: "0.2.9"
 
 package:
   name: ${{ name }}
@@ -11,7 +11,7 @@ package:
 source:
   url: https://github.com/prefix-dev/pixi/archive/refs/tags/${{ name }}-v${{ 
     version }}.tar.gz
-  sha256: 6e96c6fccc5c3f630587a2379702cb92728dbc6aba5ecc901dced0863c923e34
+  sha256: bd1ce6085b92b5254115e3d51d3820160218e05b80787ffa0a77c13418af8e5f
 
 build:
   number: 0
